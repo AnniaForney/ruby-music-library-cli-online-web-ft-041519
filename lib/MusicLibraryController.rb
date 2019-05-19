@@ -31,9 +31,8 @@ class MusicLibraryController
     elsif input == "play song"
       play_song
     input = "exit"
-      end
-    end 
-  end
+    end
+  end 
 end
 
   def list_songs
