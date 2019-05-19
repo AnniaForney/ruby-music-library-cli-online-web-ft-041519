@@ -81,7 +81,7 @@ end
     track = gets.chomp.to_i
 
     playlist = Song.all.sort{|a,b| a.name <=> b.name}
-    if(1..playlist.length).include?(input)
+    if(1..playlist.length).include?(track)
     song = playlist[input+1]
     puts "Playing #{song.name} by #{song.artist.name}"
   end
