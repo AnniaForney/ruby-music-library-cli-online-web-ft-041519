@@ -82,7 +82,7 @@ end
 
     song = Song.all.sort{|a,b| a.name <=> b.name}
     if(1..song.length).include?(input)
-
+    song = 
     puts "Playing #{song.name} by #{song.artist.name}"
   end
 end
