@@ -78,7 +78,7 @@ end
 
   def play_song
     puts "Which song number would you like to play?"
-    input = gets.chomp.to_i
+    track = gets.chomp.to_i
 
     playlist = Song.all.sort{|a,b| a.name <=> b.name}
     if(1..playlist.length).include?(input)
