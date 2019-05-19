@@ -33,7 +33,7 @@ describe "MusicLibraryController - CLI Commands" do
     end
   end
 
-  describe "'list artist'" do
+  describe "'list artists'" do
     it "triggers #list_songs_by_artist" do
       allow(music_library_controller).to receive(:gets).and_return("list artist", "exit")
 
