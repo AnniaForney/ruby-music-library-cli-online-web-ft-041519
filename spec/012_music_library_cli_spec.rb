@@ -37,7 +37,7 @@ describe "MusicLibraryController - CLI Commands" do
     it "triggers #list_songs_by_artist" do
       allow(music_library_controller).to receive(:gets).and_return("list artists", "exit")
 
-      expect(music_library_controller).to receive(:list_songs_by_artists)
+      expect(music_library_controller).to receive(:list_songs_by_artist)
 
       capture_puts { music_library_controller.call }
     end
