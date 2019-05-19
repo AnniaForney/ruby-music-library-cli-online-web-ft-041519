@@ -83,7 +83,7 @@ end
     playlist = Song.all.sort{|a,b| a.name <=> b.name}
     if(1..playlist.length).include?(track)
     song = playlist[track+1]
-    puts "Playing #{song.name} by #{song.artist.name}"
+    puts "Playing #{track.name} by #{track.artist.name}"
   end
 end
 
