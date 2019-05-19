@@ -80,9 +80,9 @@ end
     puts "Which song number would you like to play?"
     input = gets.chomp.to_i
 
-    song = Song.all.sort{|a,b| a.name <=> b.name}
+    playlist = Song.all.sort{|a,b| a.name <=> b.name}
     if(1..song.length).include?(input)
-    song = list_songs[select i]
+    song = playlist[input+1]
     puts "Playing #{song.name} by #{song.artist.name}"
   end
 end
