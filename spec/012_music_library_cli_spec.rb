@@ -33,9 +33,9 @@ describe "MusicLibraryController - CLI Commands" do
     end
   end
 
-  describe "'list artists'" do
+  describe "'list artist'" do
     it "triggers #list_songs_by_artist" do
-      allow(music_library_controller).to receive(:gets).and_return("list artists", "exit")
+      allow(music_library_controller).to receive(:gets).and_return("list artist", "exit")
 
       expect(music_library_controller).to receive(:list_songs_by_artist)
 
